@@ -49,6 +49,16 @@ const Tool = {
             experience: 'Intermediate',
         },
     ],
+    Data: [
+        {
+            tool: 'MySQL',
+            experience: 'Experienced',
+        },
+        {
+            tool: 'Mongodb',
+            experience: 'Intermediate',
+        },
+    ],
 }
 
 export default Tool;
