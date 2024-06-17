@@ -1,0 +1,118 @@
+.me {
+    color: var(--themeColor)
+}
+
+.contactpage .heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactpage .bgheading {
+    position: relative;
+    font-size: 7rem;
+    letter-spacing: 3px;
+    font-weight: 600;
+    color: var(--grey-color);
+    opacity: 0.6;
+}
+
+.contactpage .frontheading {
+    color:var(--text-color);
+    font-size: 3rem;
+    font-weight:bold;
+    position: absolute;
+}
+
+.contactpage{
+    color: var(--text-color);
+}
+
+.contactpage .row{
+    display: flex;
+    margin:4% 3%;
+}
+
+.contactpage .row .col{
+    flex-basis: 35%;
+    padding-right:4%;
+}
+
+.contactpage .col p{
+    font-size: 1.3rem;
+    text-align: justify;
+    margin-bottom: 7%;
+}
+
+.contactpage .con{
+    display: flex;
+    margin-top:4%;
+}
+
+.contactpage .con .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--themeColor);
+    border-radius: 100%;
+    width:40px;
+    height:40px;
+    margin-right:1%;
+}
+
+.contactpage .con .icon svg{
+    font-size: 1.6rem;
+}
+
+.contactpage .con .boxx{
+    font-size: 1.3rem;
+}
+
+.contactpage .con .boxx .title{
+    color:var(--grey-color);
+    font-size: 1.2rem;
+}
+
+.contactpage .col .social{
+    display: flex;
+}
+
+.contactpage .col .social div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--themeColor);
+    border-radius: 50%;
+    height:35px;
+    width:35px;
+    margin:5% 2%;
+}
+
+.contactpage .col .social div svg{
+    font-size: 1.6rem;
+    color:var(--text-color);
+}
+
+.contactpage .row .col2{
+   flex-basis: 65%;
+}
+
+.contactpage .row .col2 form div{
+    margin-bottom:5%;
+}
+
+.contactpage .row .col2 form .input{
+    color: rgba(255,255,255,0.9);
+    width:80%;
+    background-color: #252525;
+    border:0;
+    outline:none;
+    padding:1% 1.3%;
+    border-radius: 20px;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+.contactpage .row .col2 form .input:focus{
+    border:1px solid var(--themeColor);
+}

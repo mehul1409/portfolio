@@ -1,0 +1,54 @@
+.colorPicker{
+    position:fixed;
+    top:0%;
+    left:0%;
+    z-index:100;
+    margin:1%;
+}
+
+.themes{
+  padding:5px 10px;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  background-color: rgb(14, 158, 14);
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgb(14, 158, 14);
+  transition: transform 0.3s ease;
+}
+
+.themes:hover{
+    transform: scale(1.1);
+}
+
+.colors{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.colors button{
+    border:none;
+    border:1px solid var(--background-color);
+}
+
+.colorPicker .active{
+    background-color: var(--themeColor);
+    color:var(--text-color);
+    font-weight: bold;
+}
+
+.themeheading{
+    background: #1A4D2E;
+    color: white;
+    font-weight: 600;
+    margin-top:6%;
+    padding:5px;
+}
+
+.toastertick svg{
+    color:green;
+    font-size: 1.5rem;
+    padding:0;
+}
