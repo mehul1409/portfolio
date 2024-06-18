@@ -14,8 +14,9 @@ const Terminal = () => {
 
     const handleCommand = () => {
         let newOutput = output + '\n' + 'mehul@mehul ~ $ ' + input;
+        const command = input.trim().toLowerCase();
 
-        switch (input.trim()) {
+        switch (command) {
             case 'antics':
                 newOutput += '\nList of Projects:\n';
                 newOutput += '1. CRYPSUP\n   - Description: Dual-platform for creators and supporters with Ethereum-powered cryptocurrency transactions.\n\n';
@@ -37,6 +38,7 @@ const Terminal = () => {
                 newOutput += '- superpowers: View Mehul Bansal\'s skills.\n';
                 newOutput += '- journeys: Explore Mehul Bansal\'s work experience.\n';
                 newOutput += '- plain: Clear the terminal.\n';
+                newOutput += '- exit: Close the terminal.\n';
                 break;
             case 'funfacts':
                 newOutput += '\nAbout Me:\n';
@@ -54,6 +56,9 @@ const Terminal = () => {
                 newOutput += '- Web Development Intern at Optica: Developed and maintained web projects, organized events.\n';
                 newOutput += '- Hackathon Runner-up at BitBox 4.0: Demonstrated problem-solving skills in a competitive coding environment.\n';
                 newOutput += '- Open Source Contributor: Active member of Open Source Developers Community (OSDC), organized hackathons like CodeJam.\n';
+                break;
+            case 'exit':
+                window.location.href = '/'
                 break;
             default:
                 newOutput += '\nCommand not found. Type "help" for assistance.\n';
