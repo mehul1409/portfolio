@@ -8,7 +8,7 @@ li {
 }
 
 :root {
-    --themeColor: rgb(12, 100, 110);
+    --themeColor:rgb(12, 100, 110);
     --background-color: #111111;
     --text-color: white;
     --grey-color: rgb(137, 135, 135);

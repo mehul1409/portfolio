@@ -20,8 +20,8 @@ const Color = () => {
     }
 
     const [isopen, setIsOpen] = useState(false);
-    const [color, setColor] = useState('default');
-    const [theme, setTheme] = useState('poppins');
+    const [color, setColor] = useState('rgb(12, 100, 110)');
+    const [theme, setTheme] = useState('"Poppins", sans-serif');
 
     const changetheme = () => {
         setIsOpen(!isopen);
@@ -34,16 +34,25 @@ const Color = () => {
                 <div className="colors">
                     <button className='themeheading'>&darr; THEMECOLOR &darr;</button>
 
-                    <button className={color == 'Default' ? 'active' : ''} onClick={() => handleColorChange('rgb(12, 100, 110)', 'Default')} >Default</button>
-                    <button className={color == 'Red' ? 'active' : ''} onClick={() => handleColorChange('red', 'Red')}>Red</button>
-                    <button className={color == 'Yellow' ? 'active' : ''} onClick={() => handleColorChange('yellow', 'Yellow')}>Yellow</button>
+
+                    <button className={color == 'rgb(12, 100, 110)' ? 'active' : ''} onClick={() => handleColorChange('rgb(12, 100, 110)', 'Light Blue')} >Light Blue</button>
+
+                    <button className={color == '#F96167' ? 'active' : ''} onClick={() => handleColorChange('#F96167', 'Light Red')}>Light Red</button>
+
+                    <button className={color == '#375E97' ? 'active' : ''} onClick={() => handleColorChange('#375E97', 'Deep Blue')}>Deep Blue</button>
+
+                    <button className={color == '#73605B' ? 'active' : ''} onClick={() => handleColorChange('#73605B', 'Taupe')}>Taupe</button>
+
 
                     <button className='themeheading'>&darr; THEMEFONT &darr;</button>
 
-                    <button className={theme == 'Poppins' ? 'active' : ''} onClick={() => handleFontChange('"Poppins", sans-serif','Poppins')}>Poppins</button>
-                    <button className={theme == 'Inconsolata' ? 'active' : ''} onClick={() => handleFontChange('"Inconsolata", monospace','Inconsolata')}>Inconsolata</button>
-                    <button className={theme == 'Ubuntu' ? 'active' : ''} onClick={() => handleFontChange('"Ubuntu Mono", monospace','Ubuntu')}>Ubuntu Mono</button>
-                    <button className={theme == 'Cinzel' ? 'active' : ''} onClick={() => handleFontChange('"Cinzel", serif','Cinzel')}>Cinzel</button>
+                    <button className={theme == '"Poppins", sans-serif' ? 'active' : ''} onClick={() => handleFontChange('"Poppins", sans-serif','"Poppins", sans-serif')}>Poppins</button>
+
+                    <button className={theme == "Inconsolata"? 'active' : ''} onClick={() => handleFontChange('"Inconsolata", monospace',"Inconsolata")}>Inconsolata</button>
+
+                    <button className={theme == "Ubuntu Mono" ? 'active' : ''} onClick={() => handleFontChange('"Ubuntu Mono", monospace',"Ubuntu Mono")}>Ubuntu Mono</button>
+
+                    <button className={theme == "Cinzel" ? 'active' : ''} onClick={() => handleFontChange('"Cinzel", serif',"Cinzel")}>Cinzel</button>
                 </div>
             )}
             <Toaster/>
