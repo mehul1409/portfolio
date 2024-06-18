@@ -122,21 +122,29 @@ body {
 }
 
 .homePage .wrapper {
-    height: 100vh;
-    padding: 0 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
 .homePage .imgWrap {
-    width: 80%;
-    height: 80%;
+    width: 45%;
     border-radius: 5%;
     position: relative;
     overflow: hidden;
+    margin-left:4%;
 }
 
 .homePage .imgWrap img {
     width: 100%;
     height: auto !important;
+}
+
+.homePage .mehulintro{
+    width:150%;
+    margin:0 8% 0 3%;
+    z-index:1;
 }
 
 .homePage .wrapper .name {
@@ -242,6 +250,33 @@ body {
     position: absolute;
 }
 
+.homepagebuttons{
+    display: flex;
+    align-items: center;
+}
+
+@media only screen and (max-width:970px){
+    .homePage .mehulintro{
+        width:85%;
+    }
+
+    .homePage .wrapper .about{
+        text-align: start;
+        font-size: 1.3rem;
+    }
+
+    .homePage .wrapper .heading {
+        font-size: 2.25rem;
+    }
+
+    .homePage::before {
+        width: 40%;
+        height: 200%;
+        transform: rotate(-15deg);
+    }
+    
+}
+
 @media only screen and (max-width:900px) {
     .mainbgheading {
         font-size: 3.5rem;
@@ -250,6 +285,68 @@ body {
 
     .mainfrontheading {
         font-size: 2rem;
+    }
+
+    .homePage .wrapper .button{
+        font-size: 1.3rem;
+        padding-left:10px;
+    }
+
+    .homePage .wrapper .button .icon svg {
+        font-size: 2.4rem;
+    }
+}
+
+@media only screen and (max-width:700px){
+    .homePage{
+        height:100%;
+    }
+
+    .homePage .wrapper {
+        flex-direction: column-reverse;
+    }
+
+    .homePage .wrapper .heading {
+        font-size: 1.75rem;
+    }
+
+    .homePage .mehulintro{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width:85%;
+        margin:10% 0%;
+    }
+
+    .homePage .wrapper .about{
+        font-size: 1.1rem;
+        line-height: 22px;
+        text-align: start;
+    }
+
+    .homePage .wrapper .button{
+        font-size: 1.1rem;
+        padding-left:20px;
+    }
+
+    .homePage .wrapper .button .icon svg {
+        font-size: 2.2rem;
+    }
+
+    .homePage .imgWrap{
+        width:30%;
+    }
+
+    .homePage::before {
+        content: '';
+        width:0;
+    }
+    
+}
+
+@media only screen and (max-width:600px){
+    .homePage{
+        margin-bottom: 22%;
     }
 }
 
@@ -267,6 +364,31 @@ body {
         font-size: 1.7rem;
     }
 }
+
+@media only screen and (max-width:450px){
+    .homepagebuttons{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .homePage .mehulintro{
+        align-items: flex-start;
+    }
+
+    .homePage .wrapper .button{
+        font-size: 1rem;
+        padding-left:10px;
+    }
+
+    .btn{
+        padding-right: 50px;
+    }
+
+    .homePage .wrapper .button .icon svg {
+        font-size: 2rem;
+    }
+
+} 
 /*!****************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./src/app/components/nav/nav.css ***!
   \****************************************************************************************************************************************************************************************************************************************************************************/
