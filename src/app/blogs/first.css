@@ -134,6 +134,10 @@
     .buttoncenterdiv{
     margin: 5% 0 20% 0;
     }
+
+    .section p{
+        font-size: 1rem;
+    }
 }
 
 @media only screen and (max-width:500px) {
