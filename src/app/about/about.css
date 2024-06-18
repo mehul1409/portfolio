@@ -295,6 +295,20 @@
     .achievment {
         margin-bottom: 25%;
     }
+
+    .toolbox {
+        width: 335px;
+        margin-top: 5%;
+    }
+
+    .toolname {
+        font-size: 1.15rem;
+    }
+
+    .toolbox .heading{
+        font-size: 1.4rem;
+    }
+
 }
 
 @media only screen and (max-width:500px) {
