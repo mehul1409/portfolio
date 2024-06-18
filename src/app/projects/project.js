@@ -36,7 +36,7 @@ const data = [
     },
     {
         type:"cpp",
-        name: "VEHICLE OPTIMIZATION DOFTWARE",
+        name: "VEHICLE OPT. SOFTWARE",
         demo: "https://github.com/mehul1409/vechile-optimization-software/blob/main/README.md",
         github: "https://github.com/mehul1409/vechile-optimization-software/",
         thumbnail: "images/vehicle.png"

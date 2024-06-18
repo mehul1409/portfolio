@@ -1,8 +1,9 @@
 nav {
     position: fixed;
     right: 3%;
-    top: 15%;
+    top: 25%;
     z-index: 1000;
+    backdrop-filter: blur(2px);
 }
 
 nav ul {
@@ -13,9 +14,9 @@ nav ul {
 }
 
 nav li {
-    color:var(--text-color);
+    color: var(--text-color);
     background: var(--themeColor);
-    font-size: 2.4rem;
+    font-size: 2.3rem;
     border-radius: 30%;
     padding: 15%;
     margin-top: 100%;
@@ -28,28 +29,71 @@ nav li {
     align-items: center;
 }
 
-nav li a{
-    color:var(--text-color);
+nav li a {
+    color: var(--text-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.text{
+.text {
     position: absolute;
-    top:100%;
-    right:-20%;
-    font-size: 1.4rem;
+    top: 100%;
+    right: -20%;
+    font-size: 1.3rem;
     font-weight: 600;
     display: none;
     transition: transform 0.3s ease-in-out;
 }
 
-nav li:hover .text{
+nav li:hover .text {
     display: block;
 }
 
-nav li:hover{
+nav li:hover {
     transform: scale(1.1);
+}
+
+@media only screen and (max-width:800px){
+    nav li{
+        font-size: 2.1rem;
+    }
+
+    .text{
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width:600px){
+    nav li{
+        font-size: 1.85rem;
+    }
+
+    .text{
+        font-size: 1.1rem;
+    }
+}
+
+@media only screen and (max-width:600px){
+    nav ul{
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-left:2%;
+    }
+
+    nav li{
+        padding:10px;
+        margin:0;
+    }
+
+    nav{
+        top:88%;
+        left:0;
+    }
+
+    .text{
+        margin-top:2%;
+        right:0;
+    }
 }

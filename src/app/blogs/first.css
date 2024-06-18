@@ -24,16 +24,16 @@
     transform: scale(1.1)
 }
 
-.buttoncenterdiv{
+.buttoncenterdiv {
     display: flex;
     justify-content: center;
-    margin:5%;
+    margin: 3%;
 }
 
 .content {
     color: white;
-    margin: 4% 5%;
-    width: 70%;
+    margin: 4% 0;
+    width: 80%;
 }
 
 .blogdetailintro .image {
@@ -44,7 +44,7 @@
 
 .blogdetailintro .image img {
     border-radius: 20px;
-    width: 80%;
+    width: 70%;
 }
 
 .blogdetailintro .heading {
@@ -68,7 +68,7 @@
 }
 
 .blogdetailintro .blogger div {
-    margin: 0 1%;
+    margin: 0 10px;
     font-size: 1.2rem;
     display: flex;
     align-items: center;
@@ -95,4 +95,61 @@
 
 .section li {
     list-style-type: circle;
+}
+
+@media only screen and (max-width:900px) {
+    .blogdetailintro .image img {
+        margin-top: 5%;
+    }
+
+    .blogdetailintro .heading {
+        font-size: 1.75rem;
+    }
+}
+
+@media only screen and (max-width:700px) {
+    .blogdetailintro .image img {
+        width: 85%;
+    }
+
+    .blogdetailintro .heading {
+        font-size: 1.5rem;
+    }
+
+    .content {
+        width: 85%;
+    }
+
+    .blogdetailintro .blogger .bloggerimg {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .blogdetailintro .blogger {
+        flex-direction: column;
+    }
+
+    .buttoncenterdiv{
+    margin: 5% 0 20% 0;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .blogdetailintro .image img {
+        margin-top: 8%;
+    }
+
+    .blogdetailintro .heading {
+        font-size: 1.3rem;
+    }
+
+    .content {
+        width: 90%;
+    }
+
+    .blogdetailintro .blogger div {
+        font-size: 1rem;
+    }
 }

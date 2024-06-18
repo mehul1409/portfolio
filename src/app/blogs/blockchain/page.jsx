@@ -27,8 +27,10 @@ const page = () => {
           <div className="blogger">
             <img className='bloggerimg' src="/images/mehul.jpeg" alt="" />
             <div className="blogger">Mehul Bansal</div>
-            <div className="timeread"><IoBookSharp />5 min read</div>
-            <div className="date"><CiCalendarDate />17/06/2024</div>
+            <div className="update">
+              <div className="timeread"><IoBookSharp />5 min read</div>
+              <div className="date"><CiCalendarDate />17/06/2024</div>
+            </div>
           </div>
         </section>
 

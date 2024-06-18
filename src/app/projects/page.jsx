@@ -28,9 +28,9 @@ const projects = () => {
     <section id="projects">
       <div className="projectContainer">
 
-        <div className="heading">
-          <div className="bgheading">PORTFOLIO</div>
-          <div className="frontheading">PROJECTS</div>
+        <div className="mainheading">
+          <div className="mainbgheading">PORTFOLIO</div>
+          <div className="mainfrontheading">PROJECTS</div>
         </div>
 
         <div className="domainbuttons">

@@ -9,9 +9,9 @@ const About = () => {
         <>
             <section className="aboutMe">
 
-                <div className="heading">
-                    <div className="bgheading">RESUME</div>
-                    <div className="frontheading">ABOUT <span className="me">ME</span></div>
+                <div className="mainheading">
+                    <div className="mainbgheading">RESUME</div>
+                    <div className="mainfrontheading">ABOUT <span className="me">ME</span></div>
                 </div>
 
                 <div className='terminalandpersonalinfo'>

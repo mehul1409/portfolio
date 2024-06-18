@@ -82,33 +82,6 @@
 
 .aboutMe {
     color: var(--text-color);
-    margin-top: 2%;
-}
-
-.aboutMe .me {
-    color: var(--themeColor)
-}
-
-.aboutMe .heading {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.aboutMe .bgheading {
-    position: relative;
-    font-size: 5rem;
-    letter-spacing: 3px;
-    font-weight: 600;
-    color: var(--grey-color);
-    opacity: 0.6;
-}
-
-.aboutMe .frontheading {
-    color: var(--text-color);
-    font-size: 2.5rem;
-    font-weight: bold;
-    position: absolute;
 }
 
 .intro {

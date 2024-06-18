@@ -8,9 +8,9 @@ const page = () => {
   return (
     <div>
       <section className="blogs">
-      <div className="heading">
-        <div className="bgheading">MY BLOGS</div>
-        <div className="frontheading">BLOGS</div>
+      <div className="mainheading">
+        <div className="mainbgheading">MY BLOGS</div>
+        <div className="mainfrontheading">BLOGS</div>
       </div>
         <div className="blog-div">
         <div className="blog-post">

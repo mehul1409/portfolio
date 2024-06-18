@@ -64,42 +64,53 @@
     font-size: 1.5rem;
     padding:0;
 }
+
+@media only screen and (max-width:600px){  
+    .colorPicker button{
+        font-size: 0.8rem;
+    }
+
+    .themes{
+        font-size: 0.8rem;
+    }
+}
+
 /*!*****************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./src/app/globals.css ***!
   \*****************************************************************************************************************************************************************************************************************************************************************/
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-li{
+li {
     list-style-type: none;
 }
 
-:root{
-    --themeColor:rgb(12, 100, 110);
-    --background-color:#111111;
-    --text-color:white;
-    --grey-color:rgb(137, 135, 135);
-    --themeFont:"Poppins", sans-serif;
+:root {
+    --themeColor: rgb(12, 100, 110);
+    --background-color: #111111;
+    --text-color: white;
+    --grey-color: rgb(137, 135, 135);
+    --themeFont: "Inconsolata", monospace;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wdth,wght@50..200,200..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
 
-body{
+body {
     background-color: var(--background-color);
-    font-family:var(--themeFont);
+    font-family: var(--themeFont);
 }
 
-.homePage{
-    width:100%;
-    height:100vh;
-    position:relative;
+.homePage {
+    width: 100%;
+    height: 100vh;
+    position: relative;
     overflow: hidden;
 }
 
-.homePage::before{
+.homePage::before {
     content: '';
     width: 30%;
     height: 200%;
@@ -110,110 +121,162 @@ body{
     left: -5%;
 }
 
-.homePage .wrapper{
-    height:100vh;
-    padding:0 5%;
+.homePage .wrapper {
+    height: 100vh;
+    padding: 0 5%;
 }
 
-.homePage .imgWrap{
-    width:80%;
-    height:80%;
-    border-radius:5%;
+.homePage .imgWrap {
+    width: 80%;
+    height: 80%;
+    border-radius: 5%;
     position: relative;
     overflow: hidden;
 }
 
-.homePage .imgWrap img{
-    width:100%;
-    height:auto !important;
+.homePage .imgWrap img {
+    width: 100%;
+    height: auto !important;
 }
 
-.homePage .wrapper .name{
-    color:var(--themeColor);
+.homePage .wrapper .name {
+    color: var(--themeColor);
 }
 
-.homePage .wrapper .heading{
+.homePage .wrapper .heading {
     font-size: 3rem;
 }
 
-.homePage .wrapper .about{
+.homePage .wrapper .about {
     text-align: justify;
     line-height: 30px;
-    margin-top:2%;
-    color:var(--grey-color);
-    font-size:1.4rem;
+    margin-top: 2%;
+    color: var(--grey-color);
+    font-size: 1.4rem;
 }
 
-.homePage .wrapper .button{
-    color:var(--text-color);
-    border:1px solid var(--themeColor);
+.homePage .wrapper .button {
+    color: var(--text-color);
+    border: 1px solid var(--themeColor);
     border-radius: 30px;
     font-size: 1.4rem;
-    margin-top:2%;
+    margin-top: 2%;
     font-weight: 600;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    padding-left:2%;
-    margin-right:4%;
-    white-space:nowrap;
+    padding-left: 2%;
+    margin-right: 4%;
+    white-space: nowrap;
 }
 
-.homePage .wrapper .button a{
-    color:var(--text-color);
+.homePage .wrapper .button a {
+    color: var(--text-color);
     text-decoration: none;
 }
 
-.homePage .wrapper .button .icon{
+.homePage .wrapper .button .icon {
     background-color: var(--themeColor);
     border-radius: 100%;
     position: absolute;
-    right:0;
-    top:0%;
-    height:100%;
+    right: 0;
+    top: 0%;
+    height: 100%;
 }
 
-.homePage .wrapper .button .icon svg{
+.homePage .wrapper .button .icon svg {
     font-size: 2.7rem;
 }
 
-.btn{
-    padding-right:60px;
-    overflow:hidden;
+.btn {
+    padding-right: 60px;
+    overflow: hidden;
 }
 
-.clickable{
+.clickable {
     text-decoration: none;
-    color:var(--text-color);
+    color: var(--text-color);
 }
 
-.btn::after{
-    content:'';
-    width:0%;
-    height:100%;
+.btn::after {
+    content: '';
+    width: 0%;
+    height: 100%;
     background-color: var(--themeColor);
-    position:absolute;
-    right:0;
-    top:0;
+    position: absolute;
+    right: 0;
+    top: 0;
     z-index: -1;
-    transition:all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
-.btn:hover::after{
-    width:100%;
+.btn:hover::after {
+    width: 100%;
 }
 
+.mainheading .me {
+    color: var(--themeColor)
+}
 
+.mainheading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.75%;
+}
 
+.mainbgheading {
+    position: relative;
+    font-size: 5rem;
+    letter-spacing: 3px;
+    font-weight: 600;
+    color: var(--grey-color);
+    opacity: 0.6;
+}
+
+.mainfrontheading {
+    color: var(--text-color);
+    font-size: 2.5rem;
+    font-weight: bold;
+    position: absolute;
+}
+
+@media only screen and (max-width:900px) {
+    .mainbgheading {
+        font-size: 3.5rem;
+        letter-spacing: 1px;
+    }
+
+    .mainfrontheading {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width:540px) {
+    .mainheading {
+        margin-top: 7%;
+    }
+
+    .mainbgheading {
+        font-size: 3rem;
+        letter-spacing: 1px;
+    }
+
+    .mainfrontheading {
+        font-size: 1.7rem;
+    }
+}
 /*!****************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./src/app/components/nav/nav.css ***!
   \****************************************************************************************************************************************************************************************************************************************************************************/
 nav {
     position: fixed;
     right: 3%;
-    top: 15%;
+    top: 25%;
     z-index: 1000;
+    -webkit-backdrop-filter: blur(2px);
+            backdrop-filter: blur(2px);
 }
 
 nav ul {
@@ -224,9 +287,9 @@ nav ul {
 }
 
 nav li {
-    color:var(--text-color);
+    color: var(--text-color);
     background: var(--themeColor);
-    font-size: 2.4rem;
+    font-size: 2.3rem;
     border-radius: 30%;
     padding: 15%;
     margin-top: 100%;
@@ -239,28 +302,71 @@ nav li {
     align-items: center;
 }
 
-nav li a{
-    color:var(--text-color);
+nav li a {
+    color: var(--text-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.text{
+.text {
     position: absolute;
-    top:100%;
-    right:-20%;
-    font-size: 1.4rem;
+    top: 100%;
+    right: -20%;
+    font-size: 1.3rem;
     font-weight: 600;
     display: none;
     transition: transform 0.3s ease-in-out;
 }
 
-nav li:hover .text{
+nav li:hover .text {
     display: block;
 }
 
-nav li:hover{
+nav li:hover {
     transform: scale(1.1);
+}
+
+@media only screen and (max-width:800px){
+    nav li{
+        font-size: 2.1rem;
+    }
+
+    .text{
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width:600px){
+    nav li{
+        font-size: 1.85rem;
+    }
+
+    .text{
+        font-size: 1.1rem;
+    }
+}
+
+@media only screen and (max-width:600px){
+    nav ul{
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-left:2%;
+    }
+
+    nav li{
+        padding:10px;
+        margin:0;
+    }
+
+    nav{
+        top:88%;
+        left:0;
+    }
+
+    .text{
+        margin-top:2%;
+        right:0;
+    }
 }

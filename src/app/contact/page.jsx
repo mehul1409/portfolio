@@ -17,13 +17,13 @@ const contact = () => {
   }
   return (
     <section className="contactpage">
-      <div className="heading">
-        <div className="bgheading">CONTACT</div>
-        <div className="frontheading">GET IN TOUCH <span className="me">ME</span></div>
+      <div className="mainheading">
+        <div className="mainbgheading">CONTACT</div>
+        <div className="mainfrontheading">GET IN TOUCH <span className="me">ME</span></div>
       </div>
 
 
-      <div className="row">
+      <div className="rowbox">
         <div className="col">
           <p>Thank you for visiting my portfolio! Whether you have a project in mind, want to collaborate, or simply have a question, I'd love to hear from you. Feel free to reach out using the form below or connect with me directly via email.I'll get back to you as soon as possible.</p>
           <div className="con">
@@ -49,16 +49,16 @@ const contact = () => {
         </div>
         <div className="col2">
           <form className='form' onSubmit={handleSubmit}>
-            <div>
+            <div className='inputdiv'>
               <input type="text" className='input' placeholder='Your Name' id='name' name='name' />
             </div>
-            <div>
+            <div className='inputdiv'>
               <input type="text" className='input' placeholder='Your Email' id='email' name='email' />
             </div>
-            <div>
+            <div className='inputdiv'>
               <textarea placeholder='Message' rows='4' className='input' id='message' name='message'></textarea>
             </div>
-            <div>
+            <div className='inputdiv'>
               <input type="submit" className='input' disabled={state.submitting} />
             </div>
           </form>

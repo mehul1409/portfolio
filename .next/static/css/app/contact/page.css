@@ -1,121 +1,148 @@
 /*!*************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./src/app/contact/contact.css ***!
   \*************************************************************************************************************************************************************************************************************************************************************************/
-.me {
-    color: var(--themeColor)
-}
-
-.contactpage .heading {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.contactpage .bgheading {
-    position: relative;
-    font-size: 7rem;
-    letter-spacing: 3px;
-    font-weight: 600;
-    color: var(--grey-color);
-    opacity: 0.6;
-}
-
-.contactpage .frontheading {
-    color:var(--text-color);
-    font-size: 3rem;
-    font-weight:bold;
-    position: absolute;
-}
-
-.contactpage{
+.contactpage {
     color: var(--text-color);
 }
 
-.contactpage .row{
+.contactpage .rowbox {
     display: flex;
-    margin:4% 3%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.contactpage .row .col{
-    flex-basis: 35%;
-    padding-right:4%;
-}
-
-.contactpage .col p{
+.contactpage .col p {
     font-size: 1.3rem;
     text-align: justify;
-    margin-bottom: 7%;
 }
 
-.contactpage .con{
+.contactpage .col {
+    width: 80%;
+}
+
+.contactpage .con {
     display: flex;
-    margin-top:4%;
+    margin-top:1%;
 }
 
-.contactpage .con .icon{
+.contactpage .con .icon {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--themeColor);
     border-radius: 100%;
-    width:40px;
-    height:40px;
-    margin-right:1%;
+    width: 40px;
+    height: 40px;
+    margin-right: 1%;
 }
 
-.contactpage .con .icon svg{
+.contactpage .con .icon svg {
     font-size: 1.6rem;
 }
 
-.contactpage .con .boxx{
+.contactpage .con .boxx {
     font-size: 1.3rem;
 }
 
-.contactpage .con .boxx .title{
-    color:var(--grey-color);
+.contactpage .con .boxx .title {
+    color: var(--grey-color);
     font-size: 1.2rem;
 }
 
-.contactpage .col .social{
+.contactpage .col .social {
     display: flex;
 }
 
-.contactpage .col .social div{
+.contactpage .col .social div {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--themeColor);
     border-radius: 50%;
-    height:35px;
-    width:35px;
-    margin:5% 2%;
+    height: 35px;
+    width: 35px;
+    padding: 1.5%;
+    margin: 1%;
 }
 
-.contactpage .col .social div svg{
+.contactpage .col .social div svg {
     font-size: 1.6rem;
-    color:var(--text-color);
+    color: var(--text-color);
 }
 
-.contactpage .row .col2{
-   flex-basis: 65%;
-}
-
-.contactpage .row .col2 form div{
-    margin-bottom:5%;
-}
-
-.contactpage .row .col2 form .input{
-    color: rgba(255,255,255,0.9);
+.contactpage .col2{
     width:80%;
+    margin:1%;
+}
+
+.contactpage .rowbox .col2 form div {
+    margin-bottom: 1%;
+}
+
+.contactpage .rowbox .col2 form .input {
+    color: rgba(255, 255, 255, 0.9);
+    width: 70%;
     background-color: #252525;
-    border:0;
-    outline:none;
-    padding:1% 1.3%;
+    border: 0;
+    outline: none;
+    padding: 1% 1.3%;
     border-radius: 20px;
     font-size: 1.3rem;
     text-decoration: none;
 }
 
-.contactpage .row .col2 form .input:focus{
-    border:1px solid var(--themeColor);
+.contactpage .rowbox .col2 form .input:focus {
+    border: 1px solid var(--themeColor);
 }
+
+@media only screen and (max-width:800px){
+    .contactpage .rowbox .col2 form {
+        margin-top:3%;
+    }
+    
+    .contactpage .rowbox .col2 form .input{
+        width:90%;
+    }
+}
+
+@media only screen and (max-width:600px){
+    .contactpage .con{
+        margin-top:5%;
+    }
+
+    .contactpage .col .social div {
+        padding: 2%;
+        margin: 2%;
+        width:40px;
+        height:40px;
+    }
+
+    .contactpage .col p{
+        font-size: 1.1rem;
+    }
+
+    .contactpage .con .boxx {
+        font-size: 1rem;
+    }
+
+    .contactpage .rowbox .col2 form .input{
+        font-size: 1.1rem;
+        padding:1% 3%;
+        width:95%;
+    }
+
+    .contactpage .rowbox .col2 form div{
+        margin-top:3%;
+    }
+
+    .contactpage .rowbox .col2 form{
+        margin-top: 5%;
+    }
+
+    .contactpage{
+        margin-bottom: 27%;
+    }
+}
+
+
