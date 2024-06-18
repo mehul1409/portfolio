@@ -88,7 +88,7 @@
     border: 2px solid #30363d;
     background-color: #0d1117;
     border-radius: 10px;
-    padding: 0% 1%;
+    padding: 2% 1%;
     margin-left: 1%;
 }
 
@@ -118,7 +118,16 @@
     color: var(--text-color);
 }
 
-/* Education and Experience section */
+/* Experience section */
+
+.experiencecontainer {
+    margin: 2% 3%;
+}
+
+.experiencecontainer p {
+    margin: 5px 0;
+    width: 95%;
+}
 
 .educationexperience .heading {
     color: var(--text-color);
@@ -133,10 +142,6 @@
     color: var(--text-color);
     border-radius: 10px;
     padding: 5px 10px;
-}
-
-.educationexperience .container {
-    margin-top: 2%;
 }
 
 .educationexperience .detailbox {
@@ -227,5 +232,121 @@
 .terminalandpersonalinfo {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-top: 2%;
+}
+
+@media only screen and (max-width:890px) {
+    .toolbox {
+        margin: 1%;
+        width: 330px;
+        margin-top: 4%;
+    }
+
+    .toolname {
+        font-size: 1.3rem;
+    }
+
+    .item {
+        margin: 1%
+    }
+
+    .toolbox .heading {
+        margin: 3%;
+    }
+}
+
+@media only screen and (max-width:1200px) {
+    .terminalandpersonalinfo {
+        flex-direction: column-reverse;
+        align-items: initial;
+        margin: 4% 5%;
+    }
+
+    .intro .headingintro {
+        font-size: 1.5rem;
+        margin: 2% 0;
+    }
+
+    .intro .row .col div,
+    .emailbox {
+        margin-top: 1%;
+        font-size: 1.2rem;
+    }
+
+    .intro .row .col {
+        margin-left: 2%;
+    }
+
+    .emailbox {
+        margin-left: 2%;
+        margin-bottom: 2%;
+    }
+}
+
+@media only screen and (max-width:600px) {
+
+    .educationexperience .heading,
+    .achievment .heading,
+    .sectionHeading {
+        font-size: 2rem;
+    }
+
+    .achievment {
+        margin-bottom: 25%;
+    }
+}
+
+@media only screen and (max-width:500px) {
+
+    .educationexperience .heading,
+    .achievment .heading,
+    .sectionHeading {
+        font-size: 1.5rem;
+        margin-bottom: 4%;
+    }
+
+    .educationexperience .detailbox h4 {
+        font-size: 1.2rem;
+    }
+
+    .educationexperience .detailbox p {
+        font-size: 1.05rem;
+    }
+
+    .educationexperience .detailbox .duration {
+        padding: 3px 5px;
+    }
+
+    .educationexperience .detailbox {
+        margin: 6% 0;
+    }
+
+    .achievment p {
+        font-size: 1.1rem;
+        width: 80%;
+    }
+
+    .achievment .inner {
+        font-size: 1.1rem;
+    }
+
+    .achievment {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .emailbox {
+        font-size: 1rem;
+    }
+
+    .terminalandpersonalinfo {
+        flex-direction: column;
+        margin: 4% 3%;
+    }
+
+    .intro .headingintro {
+        font-size: 1.3rem;
+    }
 }

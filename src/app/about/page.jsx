@@ -65,7 +65,7 @@ const About = () => {
             <section>
                 <div className='educationexperience'>
                     <div className="heading">EXPERIENCE</div>
-                    <div className="container">
+                    <div className="experiencecontainer">
                         <div className="detailbox d-flex">
                             <div className="left">
                                 <span className='icon d-flex justify-content-center align-items-center'><LuProjector /></span>
