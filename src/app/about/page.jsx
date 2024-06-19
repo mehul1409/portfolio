@@ -50,7 +50,7 @@ const About = () => {
                                                     <div className="tick"><IoIosCheckmarkCircle /></div>
                                                     <div className="right">
                                                         <div className="toolname">{item.tool}</div>
-                                                        <div className="experience">{item.experience}</div>
+                                                        {/* <div className="experience">{item.experience}</div> */}
                                                     </div>
                                                 </div>
                                             ))
@@ -75,6 +75,16 @@ const About = () => {
                                 <h4 className=''>WEB DEVELOPER - <span></span></h4>
                                 <p>Designed and implemented responsive front-end interfaces with HTML, CSS, and JavaScript, React JS delivering seamless user experiences.</p>
                                 <p>Developed and deployed robust web applications using React, Node.js, and MongoDB/MySQL, ensuring scalability and performance.</p>
+                            </div>
+                        </div>
+                        <div className="detailbox d-flex">
+                            <div className="left">
+                                <span className='icon d-flex justify-content-center align-items-center'><LuProjector /></span>
+                            </div>
+                            <div className="right">
+                                <span className='duration'>2024-PRESENT</span>
+                                <h4 className=''>TECH VICE HEAD - <span>CICE</span></h4>
+                                <p>I am the Vice Tech Head at CICE, where I manage the technical work alongside other team members.</p>
                             </div>
                         </div>
                         <div className="detailbox d-flex">

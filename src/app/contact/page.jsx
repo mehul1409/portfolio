@@ -19,7 +19,7 @@ const contact = () => {
     <section className="contactpage">
       <div className="mainheading">
         <div className="mainbgheading">CONTACT</div>
-        <div className="mainfrontheading">GET IN TOUCH <span className="me">ME</span></div>
+        <div className="mainfrontheading">GET IN TOUCH <span className="me"></span></div>
       </div>
 
 

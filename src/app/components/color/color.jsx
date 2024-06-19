@@ -8,7 +8,7 @@ const Color = () => {
     const handleColorChange = (color, bgcolor) => {
         document.documentElement.style.setProperty('--themeColor', color);
         setIsOpen(false);
-        setColor(bgcolor);
+        setColor(color);
         toast(<div className='toastertick'>{bgcolor} theme activated! <TiTick /></div>);
     };
 
