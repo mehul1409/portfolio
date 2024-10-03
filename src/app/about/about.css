@@ -302,11 +302,15 @@
     }
 
     .toolname {
-        font-size: 1.15rem;
+        font-size: 1.10rem;
     }
 
     .toolbox .heading{
-        font-size: 1.4rem;
+        font-size: 1.2rem;
+    }
+
+    .intro .row .col div{
+        font-size: 1.2;
     }
 
 }

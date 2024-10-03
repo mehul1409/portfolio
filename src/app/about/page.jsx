@@ -83,6 +83,16 @@ const About = () => {
                             </div>
                             <div className="right">
                                 <span className='duration'>2024-PRESENT</span>
+                                <h4 className=''>EVENT COORDINATOR - <span>DSC-62</span></h4>
+                                <p>As Event Coordinator at DSC 62, I’m dedicated to crafting memorable experiences that inspire and engage our community. Together, we’ll transform ideas into unforgettable events that spark creativity and collaboration!</p>
+                            </div>
+                        </div>
+                        <div className="detailbox d-flex">
+                            <div className="left">
+                                <span className='icon d-flex justify-content-center align-items-center'><LuProjector /></span>
+                            </div>
+                            <div className="right">
+                                <span className='duration'>2024-PRESENT</span>
                                 <h4 className=''>TECH VICE HEAD - <span>CICE</span></h4>
                                 <p>I am the Vice Tech Head at CICE, where I manage the technical work alongside other team members.</p>
                             </div>
