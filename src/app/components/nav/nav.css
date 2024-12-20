@@ -67,33 +67,25 @@ nav li:hover {
 
 @media only screen and (max-width:600px){
     nav li{
-        font-size: 1.85rem;
+        font-size: 1.5rem;
+        padding:10px;
+        margin:0;
     }
 
     .text{
         font-size: 1.1rem;
+        margin-top:2%;
+        right:0;
     }
-}
 
-@media only screen and (max-width:600px){
     nav ul{
         flex-direction: row;
         justify-content: space-evenly;
         padding-left:2%;
     }
 
-    nav li{
-        padding:10px;
-        margin:0;
-    }
-
     nav{
-        top:88%;
+        top:90%;
         left:0;
-    }
-
-    .text{
-        margin-top:2%;
-        right:0;
     }
 }

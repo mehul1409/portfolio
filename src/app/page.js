@@ -15,7 +15,7 @@ export default function Home() {
                 <Image src={user} alt="mehul bansal profile image" />
               </div>  
               <div className='mehulintro'>
-              <h1 className='text-white fw-bold heading'><span className='name d-block'>HELLO,I'M MEHUL BANSAL.</span>
+              <h1 className='text-white fw-bold heading'><span className='name d-block'>HELLO,I'M MEHUL BANSAL</span>
                 <TypeAnimation
                   sequence={[
                     'WEB DEVELOPER',
@@ -27,7 +27,7 @@ export default function Home() {
                   ]}
                   wrapper="span"
                   speed={20}
-                  style={{ fontSize: '1.5em', display: 'inline-block' }}
+                  style={{ display: 'inline-block' }}
                   repeat={Infinity}
                 />
               </h1>

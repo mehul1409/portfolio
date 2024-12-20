@@ -1,10 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap');
-
 /* Experience section css */
 
 .experiencesection {
     margin: 5% 0;
-    font-family: "Poppins", sans-serif;
     color: var(--text-color);
 }
 
@@ -29,6 +26,7 @@
     border-radius: 10px;
     margin: 2%;
     width: 400px;
+    background-color: #1a1b1c;
 }
 
 .toolbox .heading {
@@ -56,7 +54,17 @@
 
 .itembox .tick {
     margin-right: 10%;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+    animation: rotateAnimation 3s linear infinite;
+}
+
+@keyframes rotateAnimation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 .toolname {
@@ -138,7 +146,7 @@
 }
 
 .educationexperience .detailbox .duration {
-    background-color: var(--grey-color);
+    background-color: var(--themeColor);
     color: var(--text-color);
     border-radius: 10px;
     padding: 5px 10px;
@@ -153,7 +161,7 @@
     font-size: 1.3rem;
     color: var(--text-color);
     font-weight: 600;
-    margin-top: 2%;
+    margin-top: 1%;
 }
 
 .educationexperience .detailbox h4 span {
@@ -164,7 +172,6 @@
 .educationexperience .detailbox p {
     color: rgb(148, 143, 143);
     font-size: 1.2rem;
-    /* width: 70%; */
 }
 
 .educationexperience .detailbox .icon {
@@ -182,7 +189,7 @@
     position: absolute;
     top: 100%;
     left: 50%;
-    height: 60px;
+    height: 150px;
 }
 
 .educationexperience .detailbox .icon svg {
@@ -236,24 +243,47 @@
     margin-top: 2%;
 }
 
-@media only screen and (max-width:890px) {
-    .toolbox {
-        margin: 1%;
-        width: 330px;
-        margin-top: 4%;
-    }
+/* freelancing work css */
 
-    .toolname {
-        font-size: 1.3rem;
-    }
+.freelance-section {
+    margin-bottom: 4%;
+    padding: 1rem;
+}
 
-    .item {
-        margin: 1%
-    }
+.freelance-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+    text-align: center;
+    text-decoration: underline;
+}
 
-    .toolbox .heading {
-        margin: 3%;
-    }
+.freelance-card {
+    background-color: #1a1b1c;
+    padding: 1.5rem;
+    border: 1px solid var(--grey-color);
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.freelance-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.freelance-content {
+    font-size: 1rem;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.freelance-content strong {
+    color: var(--themeColor);
+    font-size: 1.1rem;
+    display: block;
+    margin-bottom: 0.5rem;
 }
 
 @media only screen and (max-width:1200px) {
@@ -284,6 +314,27 @@
     }
 }
 
+
+@media only screen and (max-width:890px) {
+    .toolbox {
+        margin: 1%;
+        width: 330px;
+        margin-top: 4%;
+    }
+
+    .toolname {
+        font-size: 1.3rem;
+    }
+
+    .item {
+        margin: 1%
+    }
+
+    .toolbox .heading {
+        margin: 3%;
+    }
+}
+
 @media only screen and (max-width:600px) {
 
     .educationexperience .heading,
@@ -310,7 +361,10 @@
     }
 
     .intro .row .col div{
-        font-size: 1.2;
+        font-size: 1rem;
+    }
+    .emailbox{
+        font-size: 1rem;
     }
 
 }
@@ -320,20 +374,21 @@
     .educationexperience .heading,
     .achievment .heading,
     .sectionHeading {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         margin-bottom: 4%;
     }
 
     .educationexperience .detailbox h4 {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     .educationexperience .detailbox p {
-        font-size: 1.05rem;
+        font-size: 1rem;
     }
 
     .educationexperience .detailbox .duration {
         padding: 3px 5px;
+        font-size: 1.1rem;
     }
 
     .educationexperience .detailbox {
@@ -343,10 +398,12 @@
     .achievment p {
         font-size: 1.1rem;
         width: 80%;
+        color:var(--themeColor)
     }
 
     .achievment .inner {
-        font-size: 1.1rem;
+        font-size: 1rem;
+        width:85%;
     }
 
     .achievment {
@@ -355,16 +412,18 @@
         align-items: center;
     }
 
-    .emailbox {
-        font-size: 1rem;
-    }
-
     .terminalandpersonalinfo {
         flex-direction: column;
         margin: 4% 3%;
     }
 
     .intro .headingintro {
+        font-size: 1.2rem;
+        margin-left:1%;
+    }
+
+    .freelance-heading{
         font-size: 1.3rem;
     }
 }
+

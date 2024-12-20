@@ -1,5 +1,4 @@
 import Tool from './Tool.js';
-import { IoIosCheckmarkCircle } from "react-icons/io";
 import './about.css';
 import { LuProjector } from "react-icons/lu";
 import Terminal from '../terminal/page.jsx';
@@ -8,12 +7,10 @@ const About = () => {
     return (
         <>
             <section className="aboutMe">
-
                 <div className="mainheading">
                     <div className="mainbgheading">RESUME</div>
                     <div className="mainfrontheading">ABOUT <span className="me">ME</span></div>
                 </div>
-
                 <div className='terminalandpersonalinfo'>
                     <Terminal />
 
@@ -47,10 +44,9 @@ const About = () => {
                                         {
                                             Tool[category].map((item, index) => (
                                                 <div key={index} className="itembox">
-                                                    <div className="tick"><IoIosCheckmarkCircle /></div>
+                                                    <div className="tick">{item.logo}</div>
                                                     <div className="right">
                                                         <div className="toolname">{item.tool}</div>
-                                                        {/* <div className="experience">{item.experience}</div> */}
                                                     </div>
                                                 </div>
                                             ))
@@ -123,12 +119,26 @@ const About = () => {
                     </div>
                 </div>
             </section>
+            <section className="freelance-section">
+                <div className="freelance-heading">FREELANCING WORK</div>
+                <div className="freelance-card">
+                    <div className="freelance-content">
+                        <strong>Admin Dashboard:</strong> Created a complete admin dashboard using APIs to display relevant information with features like exporting orders as PDFs and sending WhatsApp messages.
+                    </div>
+                </div>
+                <div className="freelance-card">
+                    <div className="freelance-content">
+                        <strong>School Website:</strong> Designed and developed a website to showcase the school's work, past activities, and cultural highlights.
+                    </div>
+                </div>
+            </section>
+
             <section className="achievment">
                 <div className="heading">ACHIEVEMENT</div>
                 <p>Runners Up, Hackathon BitBox 4.0 hosted by JIIT 128.</p>
-                <div className='outer'>
-                    <div className='inner'>Developed a pioneering platform bridging creators and supporters, enabling direct support through cryptocurrency
-                        donations.
+                <div className="outer">
+                    <div className="inner">
+                        Developed a pioneering platform bridging creators and supporters, enabling direct support through cryptocurrency donations.
                     </div>
                 </div>
             </section>

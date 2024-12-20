@@ -4,7 +4,6 @@ import { LuProjector } from "react-icons/lu";
 import { IoIosContact } from "react-icons/io";
 import { TbLogs } from "react-icons/tb";
 import Link from "next/link";
-
 import './nav.css'
 
 const Nav = () => {
