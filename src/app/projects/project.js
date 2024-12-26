@@ -1,5 +1,12 @@
 const data = [
     {
+        type:"fullstack",
+        name: "CAMPUS SOCIETY",
+        demo: "https://campussociety.vercel.app/",
+        github: "https://github.com/mehul1409/campusSocietyFrontend",
+        thumbnail: "/images/campusSocietyphoto.jpeg"
+    },
+    {
         type:"frontend",
         name: "JOUST WEBSITE",
         demo: "https://joust-parola.vercel.app/",
@@ -54,7 +61,7 @@ const data = [
         demo: "https://github.com/mehul1409/web3portfolio/blob/main/README.md",
         github: "https://github.com/mehul1409/web3portfolio",
         thumbnail: "images/web3portfolio.png"
-    },
+    }
 ]
 
 export default data;

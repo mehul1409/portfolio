@@ -21,6 +21,9 @@ const projects = () => {
   const handleblock = () => {
     setDomain('blockchain');
   }
+  const handlebfullstack = () => {
+    setDomain('fullstack');
+  }
 
   const filterdata = domain === 'all' ? data : data.filter((item) => item.type == domain);
 
@@ -35,6 +38,7 @@ const projects = () => {
 
         <div className="domainbuttons">
           <button className={domain == 'all' ? 'highlight' : ''} onClick={handleall}>All</button>
+          <button className={domain == 'fullstack' ? 'highlight' : ''} onClick={handlebfullstack}>Full Stack</button>
           <button className={domain == 'frontend' ? 'highlight' : ''} onClick={handlefrontend}>Frontend</button>
           <button className={domain == 'backend' ? 'highlight' : ''} onClick={handlebackend}>Backend</button>
           <button className={domain == 'cpp' ? 'highlight' : ''} onClick={handlecpp}>C++</button>
