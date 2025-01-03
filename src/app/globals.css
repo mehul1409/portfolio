@@ -175,6 +175,15 @@ body {
     align-items: center;
 }
 
+.homePageColorDiv{
+    position:fixed;
+    top:0%;
+    right:0%;
+    z-index:100;
+    margin:1%;
+    text-decoration: none;
+}
+
 @media only screen and (max-width:970px){
     .homePage .mehulintro{
         width:85%;

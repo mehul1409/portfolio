@@ -59,6 +59,16 @@ const projects = () => {
                 <div className='projectName'>
                   <div>{item.name}</div>
                 </div>
+                <div className='technologiesUsed'>
+                  {item.tech && item.tech.length > 0 ? (
+                    item.tech.map((tech, index) => (
+                      <div key={index}>{tech}</div>
+                    ))
+                  ) : (
+                    null
+                  )}
+                </div>
+                <div className="projectDescription">{item.description}</div>
               </div>
             ))
           }

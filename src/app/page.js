@@ -9,6 +9,7 @@ import Link from 'next/link';
 export default function Home() {
   return (
     <>
+    <Link href='/projects' className='homePageColorDiv themes'>Projects</Link>
       <section className='homePage'>
           <div className='wrapper'>      
               <div className='imgWrap'>
