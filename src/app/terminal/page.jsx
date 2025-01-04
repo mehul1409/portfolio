@@ -38,6 +38,7 @@ const Terminal = () => {
                 newOutput += '- superpowers: View Mehul Bansal\'s skills.\n';
                 newOutput += '- journeys: Explore Mehul Bansal\'s work experience.\n';
                 newOutput += '- plain: Clear the terminal.\n';
+                newOutput += '- resume: download my resume.\n';
                 newOutput += '- exit: Close the terminal.\n';
                 break;
             case 'funfacts':
@@ -56,6 +57,15 @@ const Terminal = () => {
                 newOutput += '- Web Development Intern at Optica: Developed and maintained web projects, organized events.\n';
                 newOutput += '- Hackathon Runner-up at BitBox 4.0: Demonstrated problem-solving skills in a competitive coding environment.\n';
                 newOutput += '- Open Source Contributor: Active member of Open Source Developers Community (OSDC), organized hackathons like CodeJam.\n';
+                break;
+            case 'resume':
+                newOutput += '\nDownloading Resume...\n';
+                const link = document.createElement('a');
+                link.href = 'https://drive.usercontent.google.com/u/0/uc?id=1QIxXErXD41ObLLr3D-QuixmyPyP4mn17&export=download';
+                link.download = 'Mehul_Bansal_Resume.pdf';
+                link.target = '_blank';
+                link.click();
+                newOutput += 'Downloaded\n';
                 break;
             case 'exit':
                 window.location.href = '/'

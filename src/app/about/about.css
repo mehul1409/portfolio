@@ -378,7 +378,7 @@
         margin-bottom: 4%;
     }
 
-    .educationexperience .detailbox h4 {
+    .educationexperience .detailbox h4, .educationexperience .detailbox h4 span{
         font-size: 1rem;
     }
 

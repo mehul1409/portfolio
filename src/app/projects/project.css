@@ -2,7 +2,7 @@
     display: flex;
     color: var(--background-color);
     flex-wrap: wrap;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     align-items: center;
     margin-top: 3%;
 }
@@ -10,10 +10,10 @@
 #projects .contents .product {
     position: relative;
     overflow: hidden;
-    border-top-right-radius:10px;
-    border-top-left-radius:10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
     border: 1px solid var(--text-color);
-    width:100%;
+    width: 100%;
 }
 
 #projects .contents .product img {
@@ -41,9 +41,9 @@
 .projectName {
     color: var(--text-color);
     font-size: 1.5rem;
-    padding-top:1%;
+    padding-top: 1%;
     background-color: rgb(37, 38, 39);
-    width:100%;
+    width: 100%;
     text-align: center;
 }
 
@@ -55,10 +55,10 @@
     margin: 1%;
     border: 1px solid var(--themeColor);
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     background-color: rgba(58, 57, 57, 0.2);
-    width:30%;
+    width: 30%;
 }
 
 .productBox:hover {
@@ -69,21 +69,23 @@
 .projectDescription {
     font-size: 1rem;
     color: var(--text-color);
-    text-align: justify; 
+    text-align: justify;
     line-height: 1.5;
     padding: 10px;
-    padding-top:0px;
+    padding-bottom: 0px;
     border-radius: 0 0 10px 10px;
 }
 
 #projects .contents .product a {
     color: var(--text-color);
     text-decoration: none;
-    border: 1px solid var(--themeColor);
+    border: 1px solid white;
+    background-color: var(--themeColor);
     padding: 0.7% 2%;
     margin: 3%;
     border-radius: 30px;
     transition: transform 0.3s ease-in-out;
+    font-weight: 400;
 }
 
 #projects .contents .product a:hover {
@@ -132,84 +134,83 @@
 
 .technologiesUsed {
     display: flex;
-    width:100%;
+    width: 100%;
     flex-wrap: wrap;
-    justify-content: center;
+    margin-bottom: 1%;
 }
 
-.technologiesUsed div{
+.technologiesUsed div {
     color: white;
-    font-size:1rem;
-    text-align: center;
-    padding:1px 5px;
-    background-color: rgb(37, 38, 39);
-    border-radius: 3px;
-    margin:2%;
+    font-size: 0.9rem;
+    padding: 2px 5px;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 1%;
 }
 
-@media only screen and (max-width:1050px){
-    .productBox{
-        width:38%;
+@media only screen and (max-width:1050px) {
+    .productBox {
+        width: 38%;
     }
 }
 
-@media only screen and (max-width:915px){
+@media only screen and (max-width:915px) {
     #projects .contents .product img {
         max-height: 190px;
     }
 
-    .projectName{
+    .projectName {
         font-size: 1.3rem;
     }
 
-    .productBox{
-        width:40%;
+    .productBox {
+        width: 40%;
     }
 }
 
-@media only screen and (max-width:880px){
-    .productBox{
-        width:45%;
+@media only screen and (max-width:880px) {
+    .productBox {
+        width: 45%;
     }
 }
 
-@media only screen and (max-width:600px){
-    #projects .contents{
+@media only screen and (max-width:600px) {
+    #projects .contents {
         margin-bottom: 22%;
     }
 }
 
-@media only screen and (max-width:665px){
+@media only screen and (max-width:665px) {
     #projects .contents .product img {
         max-height: 200px;
     }
 
-    .projectName{
+    .projectName {
         font-size: 1.2rem;
     }
 
-    .domainbuttons button{
+    .domainbuttons button {
         font-size: 1.1rem;
     }
 
-    .productBox{
-        width:80%;
-        margin-top:5%;
+    .productBox {
+        width: 80%;
+        margin-top: 5%;
     }
 
 }
 
-@media only screen and (max-width:500px){
+@media only screen and (max-width:500px) {
     .domainbuttons button {
-        margin:2% 2%;
+        margin: 2% 2%;
     }
 
     #projects .contents .product img {
         max-height: 180px;
     }
 
-    .productBox{
-        width:95%;
+    .productBox {
+        width: 95%;
     }
 }
-

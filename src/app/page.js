@@ -39,9 +39,9 @@ export default function Home() {
                   <span className='icon'><Link href='/about'><FaArrowRight /></Link></span>
                 </button> 
                 <button className="button btn">
-                  <a href='https://drive.google.com/file/d/1RpeW9XfHFapJCGftXyscP-sMgyl51Fpv/view?usp=drive_link' className='clickable'>Download Resume</a>
+                  <a href='https://drive.usercontent.google.com/u/0/uc?id=1QIxXErXD41ObLLr3D-QuixmyPyP4mn17&export=download' className='clickable'>Download Resume</a>
                   <span className='icon'>
-                    <a href='https://drive.google.com/file/d/1RpeW9XfHFapJCGftXyscP-sMgyl51Fpv/view?usp=drive_link' className='clickable'><MdDownloading />
+                    <a href='https://drive.usercontent.google.com/u/0/uc?id=1QIxXErXD41ObLLr3D-QuixmyPyP4mn17&export=download' className='clickable'><MdDownloading />
                     </a>
                   </span>
                 </button>       
