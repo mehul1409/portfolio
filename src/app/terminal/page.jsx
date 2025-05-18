@@ -61,8 +61,8 @@ const Terminal = () => {
             case 'resume':
                 newOutput += '\nDownloading Resume...\n';
                 const link = document.createElement('a');
-                link.href = 'https://drive.usercontent.google.com/u/0/uc?id=1QIxXErXD41ObLLr3D-QuixmyPyP4mn17&export=download';
-                link.download = 'Mehul_Bansal_Resume.pdf';
+                link.href = 'https://drive.google.com/drive/folders/1SJlRr5LFHsFmIVeLyOZtb9dHZDD-BRo4';
+                link.download = 'Mehul Bansal.pdf';
                 link.target = '_blank';
                 link.click();
                 newOutput += 'Downloaded\n';
