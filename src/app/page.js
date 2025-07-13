@@ -9,45 +9,53 @@ import Link from 'next/link';
 export default function Home() {
   return (
     <>
-    <Link href='/projects' className='homePageColorDiv themes'>Projects</Link>
+      <Link href='/projects' className='homePageColorDiv themes'>Projects</Link>
       <section className='homePage'>
-          <div className='wrapper'>      
-              <div className='imgWrap'>
-                <Image src={user} alt="mehul bansal profile image" />
-              </div>  
-              <div className='mehulintro'>
-              <h1 className='text-white fw-bold heading'><span className='name d-block'>HELLO,I'M MEHUL BANSAL</span>
-                <TypeAnimation
-                  sequence={[
-                    'WEB DEVELOPER',
-                    2000,
-                    'WEB DESIGNER',
-                    2000,
-                    'BLOCKCHAIN DEV.',
-                    1000,
-                  ]}
-                  wrapper="span"
-                  speed={20}
-                  style={{ display: 'inline-block' }}
-                  repeat={Infinity}
-                />
-              </h1>
-              <p className='about'>Hey there, code enthusiasts! As a tech wizard with a flair for React, Node.js, and blockchain, I've conjured up projects like CRYPSUP, where creators meet Ethereum, and Blogify, the blog site that practically writes itself (okay, not really). I scored the runner-up spot at Hackathon BitBox 4.0 – proof that my coding skills are better than my dance moves. When I'm not coding, I'm organizing hackathons with the Open Source Developers Community. Let's build something so amazing, even your computer will high-five you!</p>
-              <div className='homepagebuttons'>            
-                <button className="button btn">
-                  <Link href='/about'>Read More</Link>
-                  <span className='icon'><Link href='/about'><FaArrowRight /></Link></span>
-                </button> 
-                <button className="button btn">
-                  <a href='https://drive.usercontent.google.com/u/0/uc?id=1QIxXErXD41ObLLr3D-QuixmyPyP4mn17&export=download' className='clickable'>Download Resume</a>
-                  <span className='icon'>
-                    <a href='https://drive.usercontent.google.com/u/0/uc?id=1QIxXErXD41ObLLr3D-QuixmyPyP4mn17&export=download' className='clickable'><MdDownloading />
-                    </a>
-                  </span>
-                </button>       
-            </div>
-              </div>
+        <div className='wrapper'>
+          <div className='imgWrap'>
+            <Image src={user} alt="mehul bansal profile image" />
           </div>
+          <div className='mehulintro'>
+            <h1 className='text-white fw-bold heading'><span className='name d-block'>HELLO,I'M MEHUL BANSAL</span>
+              <TypeAnimation
+                sequence={[
+                  'FULLSTACK DEVELOPER',
+                  2000,
+                  'NODE.JS DEVELOPER',
+                  2000,
+                ]}
+                wrapper="span"
+                speed={20}
+                style={{ display: 'inline-block' }}
+                repeat={Infinity}
+              />
+            </h1>
+            <p className='about'>Hey there, code enthusiasts! Full-stack developer with a strong focus on backend systems, cloud architecture, and blockchain integration. Experienced in Node.js, React.js, MongoDB, Docker, and AWS (EC2, S3, Lambda, ECR, SQS, SNS). Built scalable platforms like CampusSociety, VerbalEx, and Crypsup (Runner-up @ BitBox 4.0). Contributor to Web3 with wallet-gated portfolio and ETH donation feature. Active in tech leadership as Program Coordinator (DSC) and Technical Coordinator (CICE). Passionate about building event-driven, modular, and secure systems.</p>
+            <div className='homepagebuttons'>
+              <button className="button btn">
+                <Link href='/about'>Read More</Link>
+                <span className='icon'><Link href='/about'><FaArrowRight /></Link></span>
+              </button>
+              <button className="button btn">
+                <a href='https://drive.google.com/uc?export=download&id=11nvgoMzg7-vDSrsbC5Qpv0GOVyS_C3jJ' className='clickable'>Download Resume</a>
+                <span className='icon'>
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=11nvgoMzg7-vDSrsbC5Qpv0GOVyS_C3jJ"
+                    className="clickable"
+                    download
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <span className="icon">
+                      <MdDownloading />
+                    </span>
+                  </a>
+
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
       </section>
     </>
   );

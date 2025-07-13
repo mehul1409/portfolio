@@ -9,6 +9,15 @@ const data = [
         tech: ["React", "Node", "Express", "MongoDB"],
     },
     {
+        type:"fullstack",
+        name:"POLLING SYSTEM",
+        github:"https://github.com/mehul1409/Polling-System",
+        demo:"https://polling-system-hazel.vercel.app/",
+        thumbnail:"images/pollingSystem.jpeg",
+        description:"The Live Polling System is a real-time web app enabling teachers to create live polls and students to respond instantly. It uses Socket.IO for real-time interactions and MongoDB for data storage. Key features include live result updates, chat functionality, student activity tracking, and role-based access. The backend is hosted on Render and kept active using GitHub Actions.",
+        tech:['Nodejs','Express','MongoDB','CSS','tailwind','React','Mongoose', 'Socket.io']
+    },
+    {
         type: "fullstack",
         name: "LAUNDRY LIFT",
         demo: "https://www.laundrylift.in/",
@@ -97,7 +106,7 @@ const data = [
         thumbnail:"images/blogify.jpeg",
         description:"A dynamic and user-friendly blogging platform that allows users to create, manage, and customize their posts effortlessly. It includes an admin panel with controls to moderate content and manage users, ensuring a balanced and engaging blogging environment.",
         tech:['HTML','CSS','Javascript','PHP','MySQL']
-    }
+    },
 ]
 
 export default data;

@@ -246,45 +246,46 @@
 /* freelancing work css */
 
 .freelance-section {
-    margin-bottom: 4%;
-    padding: 1rem;
-}
-
-.freelance-heading {
-    font-size: 2rem;
-    font-weight: bold;
+    margin: 5% 0;
     color: var(--text-color);
-    margin-bottom: 1rem;
+    padding: 0 2%;
+  }
+  
+  .freelance-heading {
+    color: var(--text-color);
+    font-size: 2.5rem;
+    font-weight: bold;
     text-align: center;
     text-decoration: underline;
-}
-
-.freelance-card {
+    margin-bottom: 2rem;
+  }
+  
+  .freelance-card {
     background-color: #1a1b1c;
-    padding: 1.5rem;
-    border: 1px solid var(--grey-color);
+    border: 1px solid var(--text-color);
     border-radius: 12px;
-    margin-bottom: 1rem;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.freelance-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-}
-
-.freelance-content {
-    font-size: 1rem;
+    padding: 1.5rem 2rem;
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .freelance-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.08);
+  }
+  
+  .freelance-content {
+    font-size: 1.2rem;
     color: var(--text-color);
     line-height: 1.6;
-}
-
-.freelance-content strong {
-    color: var(--themeColor);
-    font-size: 1.1rem;
+  }
+  
+  .freelance-content strong {
     display: block;
+    color: var(--themeColor);
+    font-size: 1.3rem;
     margin-bottom: 0.5rem;
-}
+  }
 
 @media only screen and (max-width:1200px) {
     .terminalandpersonalinfo {
@@ -334,6 +335,24 @@
         margin: 3%;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .freelance-heading {
+      font-size: 2rem;
+    }
+  
+    .freelance-content {
+      font-size: 1rem;
+    }
+  
+    .freelance-content strong {
+      font-size: 1.1rem;
+    }
+  
+    .freelance-card {
+      padding: 1rem 0.8rem;
+    }
+  }
 
 @media only screen and (max-width:600px) {
 
@@ -421,9 +440,9 @@
         font-size: 1.2rem;
         margin-left:1%;
     }
-
     .freelance-heading{
         font-size: 1.3rem;
-    }
 }
+}
+
 

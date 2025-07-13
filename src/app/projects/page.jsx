@@ -5,6 +5,7 @@ import { useState } from 'react';
 
 const projects = () => {
   const [domain, setDomain] = useState('all');
+  const [expanded, setExpanded] = useState({});
 
   const handleall = () => {
     setDomain('all');
@@ -46,32 +47,45 @@ const projects = () => {
         </div>
 
         <div className="contents">
-          {
-            filterdata.map((item, index) => (
-              <div className='productBox'>
-                <div className="product" key={index}>
+          {filterdata.map((item, index) => {
+            const isExpanded = expanded[index] || false;
+            const words = item.description.split(' ');
+            const shortDescription = words.slice(0, 50).join(' ') + (words.length > 50 ? '...' : '');
+
+            return (
+              <div className='productBox' key={index}>
+                <div className="product">
                   <img src={item.thumbnail} alt={item.name} />
                   <div className="text">
-                    <a target="blank" href={item.github} >Github</a>
-                    <a target="blank" href={item.demo} >Demo</a>
+                    <a target="blank" href={item.github}>Github</a>
+                    <a target="blank" href={item.demo}>Demo</a>
                   </div>
                 </div>
+
                 <div className='projectName'>
                   <div>{item.name}</div>
                 </div>
-                <div className="projectDescription">{item.description}</div>
-                <div className='technologiesUsed'>
-                  {item.tech && item.tech.length > 0 ? (
-                    item.tech.map((tech, index) => (
-                      <div key={index}>{tech}</div>
-                    ))
-                  ) : (
-                    null
+
+                <div className="projectDescription">
+                  {isExpanded ? item.description : shortDescription}
+                  {words.length > 50 && (
+                    <span
+                    
+                  onClick={() => setExpanded(prev => ({ ...prev, [index]: !isExpanded }))}
+                      style={{ cursor: 'pointer', color: '#007bff', marginLeft: '5px' }}
+                    >
+                      {isExpanded ? '▲ Show Less' : '▼ Show More'}
+                    </span>
                   )}
                 </div>
+
+                <div className='technologiesUsed'>
+                  {item.tech?.map((tech, i) => <div key={i}>{tech}</div>)}
+                </div>
               </div>
-            ))
-          }
+            );
+          })}
+
         </div>
       </div>
     </section>

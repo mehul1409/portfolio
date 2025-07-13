@@ -149,6 +149,15 @@
     margin: 1%;
 }
 
+.projectDescription span {
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  .projectDescription span:hover {
+    text-decoration: underline;
+  }
+  
+
 @media only screen and (max-width:1050px) {
     .productBox {
         width: 38%;

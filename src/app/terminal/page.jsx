@@ -18,62 +18,75 @@ const Terminal = () => {
 
         switch (command) {
             case 'antics':
-                newOutput += '\nList of Projects:\n';
-                newOutput += '1. CRYPSUP\n   - Description: Dual-platform for creators and supporters with Ethereum-powered cryptocurrency transactions.\n\n';
-                newOutput += '2. Joust Website\n   - Description: Fully responsive website for a college event.\n\n';
-                newOutput += '3. DU Literature Fest\n   - Description: Responsive, content-rich site for literary enthusiasts.\n\n';
-                newOutput += '4. Vehicle Optimization Software\n   - Description: Software in C++ to manage car info and service queues.\n\n';
-                newOutput += '5. Blogify\n   - Description: Blog platform with admin controls.\n\n';
+                newOutput += '\nProjects:\n';
+                newOutput += '1. CRYPSUP - A creator-supporter platform with crypto donations (BitBox Runner-up).\n';
+                newOutput += '2. CampusSociety - MERN-based platform for college event management.\n';
+                newOutput += '3. VerbalEx - OCR tool supporting Indian languages with e-sign & form fill APIs.\n';
+                newOutput += '4. Web3Portfolio - Wallet-based personal portfolio with ETH donation.\n';
+                newOutput += '5. Vehicle Optimization Software - C++ based system for service and pricing management.\n';
                 break;
-            case 'plain':
-                newOutput = ' ';
+        
+            case 'funfacts':
+                newOutput += '\nAbout Me:\n';
+                newOutput += 'B.Tech CSE student at Jaypee Institute of Information Technology.\n';
+                newOutput += 'Backend-focused full-stack developer with a love for Web3 & cloud infra.\n';
+                newOutput += 'Enthusiastic about building modular, secure, and scalable systems.\n';
                 break;
+        
+            case 'superpowers':
+                newOutput += '\nSkills:\n';
+                newOutput += '- Languages: C++, JavaScript, Python, Solidity\n';
+                newOutput += '- Backend: Node.js, Express.js, MongoDB, MySQL\n';
+                newOutput += '- Frontend: React.js, Tailwind CSS, Bootstrap\n';
+                newOutput += '- DevOps: Docker, GitHub Actions, Nginx\n';
+                newOutput += '- Cloud: AWS EC2, S3, Lambda, SNS, SQS, CloudWatch\n';
+                break;
+        
+            case 'journeys':
+                newOutput += '\nExperience:\n';
+                newOutput += '- Backend Developer @ Kartavya Tech (Jan–Jul 2025): Optimized Node.js APIs, DB structure, event-driven systems using AWS SQS/SNS/Lambda.\n';
+                newOutput += '- Coordinator @ DSC: Led event management & hackathons like SIH, Hackin’ Winters.\n';
+                newOutput += '- Tech Coordinator @ CICE: Conducted Git & project workshops.\n';
+                newOutput += '- Runner-up @ BitBox 4.0: For CRYPSUP – crypto-based support system.\n';
+                break;
+        
+            case 'resume':
+                newOutput += '\nDownloading Resume...\n';
+                const link = document.createElement('a');
+                link.href = 'https://drive.google.com/uc?export=download&id=11nvgoMzg7-vDSrsbC5Qpv0GOVyS_C3jJ';
+                link.download = 'Mehul_Bansal.pdf';
+                link.target = '_blank';
+                link.click();
+                newOutput += 'Downloaded\n';
+                break;
+        
             case 'cd':
                 newOutput += "\n Mehul's Portfolio/ \n";
                 break;
+        
             case 'help':
                 newOutput += '\nAvailable Commands:\n';
                 newOutput += '- antics: List all projects.\n';
                 newOutput += '- funfacts: Know about Mehul Bansal.\n';
                 newOutput += '- superpowers: View Mehul Bansal\'s skills.\n';
                 newOutput += '- journeys: Explore Mehul Bansal\'s work experience.\n';
+                newOutput += '- resume: Download my resume.\n';
                 newOutput += '- plain: Clear the terminal.\n';
-                newOutput += '- resume: download my resume.\n';
                 newOutput += '- exit: Close the terminal.\n';
                 break;
-            case 'funfacts':
-                newOutput += '\nAbout Me:\n';
-                newOutput += 'I\'m Mehul Bansal, your friendly neighborhood code whisperer, and a B.Tech. Computer Science student from Jaypee Institute of Information Technology. I\'m passionate about technology and enjoy creating innovative solutions.\n\n';
+        
+            case 'plain':
+                newOutput = '';
                 break;
-            case 'superpowers':
-                newOutput += '\nSkills:\n';
-                newOutput += '- Programming Languages: C++, JavaScript\n';
-                newOutput += '- Web Development: HTML, CSS, React.js, Node.js, Express\n';
-                newOutput += '- Databases: MongoDB, MySQL\n';
-                newOutput += '- Blockchain: Ethereum, Solidity\n';
-                break;
-            case 'journeys':
-                newOutput += '\nExperience:\n';
-                newOutput += '- Web Development Intern at Optica: Developed and maintained web projects, organized events.\n';
-                newOutput += '- Hackathon Runner-up at BitBox 4.0: Demonstrated problem-solving skills in a competitive coding environment.\n';
-                newOutput += '- Open Source Contributor: Active member of Open Source Developers Community (OSDC), organized hackathons like CodeJam.\n';
-                break;
-            case 'resume':
-                newOutput += '\nDownloading Resume...\n';
-                const link = document.createElement('a');
-                link.href = 'https://drive.google.com/drive/folders/1SJlRr5LFHsFmIVeLyOZtb9dHZDD-BRo4';
-                link.download = 'Mehul Bansal.pdf';
-                link.target = '_blank';
-                link.click();
-                newOutput += 'Downloaded\n';
-                break;
+        
             case 'exit':
-                window.location.href = '/'
+                window.location.href = '/';
                 break;
+        
             default:
                 newOutput += '\nCommand not found. Type "help" for assistance.\n';
                 break;
-        }
+        }        
 
         setOutput(newOutput);
         setInput('');

@@ -1,16 +1,8 @@
-import { FaHtml5 } from "react-icons/fa";
-import { SiCss3 } from "react-icons/si";
-import { SiSass } from "react-icons/si";
-import { SiBootstrap } from "react-icons/si";
-import { SiTailwindcss } from "react-icons/si";
-import { SiReact } from "react-icons/si";
-import { FaNodeJs } from "react-icons/fa";
-import { FaGitAlt } from "react-icons/fa";
+import { FaHtml5, FaNodeJs, FaGitAlt, FaPython } from "react-icons/fa";
+import { SiCss3, SiSass, SiBootstrap, SiTailwindcss, SiReact, SiSolidity, SiDocker, SiAmazonaws, SiNginx, SiExpress, SiMongodb } from "react-icons/si";
 import { DiMysql } from "react-icons/di";
-import { DiMongodb } from "react-icons/di";
-import { TbBrandCpp } from "react-icons/tb";
-import { TbBrandJavascript } from "react-icons/tb";
-import { SiSolidity } from "react-icons/si";
+import { TbBrandCpp, TbBrandJavascript } from "react-icons/tb";
+import { SiGithubactions } from "react-icons/si";
 
 const Tool = {
     FrontendTools: [
@@ -40,9 +32,9 @@ const Tool = {
             logo: <SiTailwindcss />,
         },
         {
-            tool:'React JS',
-            experience:'Intermediate',
-            logo:<SiReact/>
+            tool: 'React JS',
+            experience: 'Intermediate',
+            logo: <SiReact />
         }
     ],
     BackendTools: [
@@ -54,10 +46,15 @@ const Tool = {
         {
             tool: 'Express JS',
             experience: 'Intermediate',
-            logo:<FaNodeJs/>
+            logo: <SiExpress />,
         },
         {
-            tool: 'GIT',
+            tool: 'Socket.IO',
+            experience: 'Intermediate',
+            logo: <FaNodeJs />, // no official Socket.io icon
+        },
+        {
+            tool: 'Git',
             experience: 'Experienced',
             logo: <FaGitAlt />,
         },
@@ -69,27 +66,54 @@ const Tool = {
             logo: <DiMysql />,
         },
         {
-            tool: 'Mongodb',
+            tool: 'MongoDB',
             experience: 'Intermediate',
-            logo: <DiMongodb />,    
+            logo: <SiMongodb />,
+        }
+    ],
+    CloudAndDevOps: [
+        {
+            tool: 'Docker',
+            experience: 'Intermediate',
+            logo: <SiDocker />,
+        },
+        {
+            tool: 'GitHub Actions',
+            experience: 'Intermediate',
+            logo: <SiGithubactions />,
+        },
+        {
+            tool: 'AWS',
+            experience: 'Intermediate',
+            logo: <SiAmazonaws />,
+        },
+        {
+            tool: 'Nginx',
+            experience: 'Beginner',
+            logo: <SiNginx />,
         },
     ],
-    Languages:[
+    Languages: [
         {
-            tool:'C/CPP',
-            experience:'Experienced',
-            logo:<TbBrandCpp/>
+            tool: 'C/C++',
+            experience: 'Experienced',
+            logo: <TbBrandCpp />,
         },
         {
-            tool: 'Javascript',
+            tool: 'JavaScript',
             experience: 'Experienced',
-            logo: <TbBrandJavascript/>
+            logo: <TbBrandJavascript />
         },
         {
             tool: 'Solidity',
             experience: 'Beginner',
-            logo: <SiSolidity/>,
+            logo: <SiSolidity />,
         },
+        {
+            tool: 'Python',
+            experience: 'Beginner',
+            logo: <FaPython />
+        }
     ]
 }
 
